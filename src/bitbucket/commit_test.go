@@ -2,6 +2,7 @@ package bitbucket
 
 import (
 	"testing"
+	"time"
 
 	"gotest.tools/assert"
 )
@@ -25,5 +26,42 @@ func TestCommitOpionsToQueryString(t *testing.T) {
 			Path:  "bar",
 		}
 		assert.Equal(t, "path=bar&since=foo", options.ToQueryString())
+	})
+}
+
+func TestCommitString(t *testing.T) {
+	t.Run("should return string representation of commit", func(t *testing.T) {
+		commit := Commit{
+			ID:              "1234567890",
+			Message:         "foo",
+			AuthorTimestamp: time.Now().UnixMilli(),
+			Author: User{
+				DisplayName: "bar",
+			},
+		}
+		assert.Equal(t, "foo (1234567890) by bar about a second ago", commit.String())
+	})
+}
+
+func TestCommitTimeAgo(t *testing.T) {
+	t.Run("should return empty string if no timeago is defined", func(t *testing.T) {
+		commit := Commit{}
+		assert.Equal(t, "", commit.TimeAgo())
+	})
+
+	t.Run("should return human readable one month ago", func(t *testing.T) {
+		commit := Commit{
+			//AuthorTimestamp: 1636629378000,
+			AuthorTimestamp: time.Now().UnixMilli() - 30*24*60*60*1000,
+		}
+		assert.Equal(t, "one month ago", commit.TimeAgo())
+	})
+
+	t.Run("should return human readable one year ago", func(t *testing.T) {
+		commit := Commit{
+			//AuthorTimestamp: 1636629378000,
+			AuthorTimestamp: time.Now().UnixMilli() - 365*24*60*60*1000,
+		}
+		assert.Equal(t, "one year ago", commit.TimeAgo())
 	})
 }

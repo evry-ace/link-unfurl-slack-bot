@@ -79,6 +79,10 @@ func (c Commit) String() string {
 
 // TimeAgo returns the time since the commit was made in human readable format
 func (c Commit) TimeAgo() string {
+	if c.AuthorTimestamp == 0 {
+		return ""
+	}
+
 	t := time.Unix(c.AuthorTimestamp/1000, 0)
 	s := timeago.NoMax(timeago.English).Format(t)
 
