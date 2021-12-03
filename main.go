@@ -65,8 +65,7 @@ func main() {
 			case socketmode.EventTypeEventsAPI:
 				eventsAPIEvent, ok := evt.Data.(slackevents.EventsAPIEvent)
 				if !ok {
-					logrus.Warn("Ignored %+v\n", evt)
-
+					logrus.WithField("event", evt).Warn("Event type is not EventsAPIEvent")
 					continue
 				}
 
