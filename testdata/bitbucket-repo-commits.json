@@ -1,0 +1,1194 @@
+{
+  "values": [
+    {
+      "id": "c2646bb9a628c4fd935e6e0e7bca2da01afecde7",
+      "displayId": "c2646bb9a62",
+      "author": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637768058000,
+      "committer": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637768058000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "4ea113530d980273c0a2007b844cb071cde501d2",
+          "displayId": "4ea113530d9"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1396"
+        ]
+      }
+    },
+    {
+      "id": "4ea113530d980273c0a2007b844cb071cde501d2",
+      "displayId": "4ea113530d9",
+      "author": {
+        "name": "user-b",
+        "emailAddress": "user-b@corp.org",
+        "id": 1002,
+        "displayName": "User B",
+        "active": true,
+        "slug": "user-b",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-b"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637590410000,
+      "committer": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637590410000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "166c230d4502f3a275cd054e7db01de8d437988e",
+          "displayId": "166c230d450"
+        }
+      ]
+    },
+    {
+      "id": "166c230d4502f3a275cd054e7db01de8d437988e",
+      "displayId": "166c230d450",
+      "author": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637588976000,
+      "committer": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637588976000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "0c11ec659b8dcad6de14a537a285dbb000d2fcb4",
+          "displayId": "0c11ec659b8"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1424"
+        ]
+      }
+    },
+    {
+      "id": "0c11ec659b8dcad6de14a537a285dbb000d2fcb4",
+      "displayId": "0c11ec659b8",
+      "author": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637227279000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637227279000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "090193857dc9a34c016b6faed98681a2ec8f0222",
+          "displayId": "090193857dc"
+        }
+      ]
+    },
+    {
+      "id": "090193857dc9a34c016b6faed98681a2ec8f0222",
+      "displayId": "090193857dc",
+      "author": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637225206000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637225206000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "a2f83365fdbeea5cbdf3f4446baabfb94e4a9a7c",
+          "displayId": "a2f83365fdb"
+        }
+      ]
+    },
+    {
+      "id": "a2f83365fdbeea5cbdf3f4446baabfb94e4a9a7c",
+      "displayId": "a2f83365fdb",
+      "author": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637161619000,
+      "committer": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637161619000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "b870e729bef48bdf2800b6f659012ed256ae90cb",
+          "displayId": "b870e729bef"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1410"
+        ]
+      }
+    },
+    {
+      "id": "b870e729bef48bdf2800b6f659012ed256ae90cb",
+      "displayId": "b870e729bef",
+      "author": {
+        "name": "user-d",
+        "emailAddress": "user-d@corp.org",
+        "id": 1004,
+        "displayName": "User D",
+        "active": true,
+        "slug": "user-d",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-d"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637152470000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637152470000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "57a514403148e0581e21f5d2f39c41ceecdbddce",
+          "displayId": "57a51440314"
+        }
+      ]
+    },
+    {
+      "id": "57a514403148e0581e21f5d2f39c41ceecdbddce",
+      "displayId": "57a51440314",
+      "author": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637149832000,
+      "committer": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637149832000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "38ea7bbe09d508adac607780120ac10633920f8b",
+          "displayId": "38ea7bbe09d"
+        }
+      ]
+    },
+    {
+      "id": "38ea7bbe09d508adac607780120ac10633920f8b",
+      "displayId": "38ea7bbe09d",
+      "author": {
+        "name": "user-d",
+        "emailAddress": "user-d@corp.org",
+        "id": 1004,
+        "displayName": "User D",
+        "active": true,
+        "slug": "user-d",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-d"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637140322000,
+      "committer": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637140322000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "3500edddec68a04229fc3d2b0c8ea0ef89e63fbc",
+          "displayId": "3500edddec6"
+        }
+      ]
+    },
+    {
+      "id": "3500edddec68a04229fc3d2b0c8ea0ef89e63fbc",
+      "displayId": "3500edddec6",
+      "author": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637135643000,
+      "committer": {
+        "name": "user-a",
+        "emailAddress": "user-a@corp.org",
+        "id": 1001,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637135643000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "addce8f65e8af371a64aebc57d4ee2ce2f5adb87",
+          "displayId": "addce8f65e8"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1419"
+        ]
+      }
+    },
+    {
+      "id": "addce8f65e8af371a64aebc57d4ee2ce2f5adb87",
+      "displayId": "addce8f65e8",
+      "author": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1637058683000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1637058683000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "ba5a410fa0c264beba3c465856571aa40ea7014b",
+          "displayId": "ba5a410fa0c"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1205"
+        ]
+      }
+    },
+    {
+      "id": "ba5a410fa0c264beba3c465856571aa40ea7014b",
+      "displayId": "ba5a410fa0c",
+      "author": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636970247000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636970247000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "1d1f71701946925896327411ad5d202e307e5a9e",
+          "displayId": "1d1f7170194"
+        }
+      ]
+    },
+    {
+      "id": "1d1f71701946925896327411ad5d202e307e5a9e",
+      "displayId": "1d1f7170194",
+      "author": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636637164000,
+      "committer": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636637164000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "10adaf9cfdbfcd3348e927abed0a9e84c5d7b06b",
+          "displayId": "10adaf9cfdb"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1287"
+        ]
+      }
+    },
+    {
+      "id": "10adaf9cfdbfcd3348e927abed0a9e84c5d7b06b",
+      "displayId": "10adaf9cfdb",
+      "author": {
+        "name": "user-g",
+        "emailAddress": "user-g@corp.org",
+        "id": 1007,
+        "displayName": "User G",
+        "active": true,
+        "slug": "user-g",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-g"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636635862000,
+      "committer": {
+        "name": "user-g",
+        "emailAddress": "user-g@corp.org",
+        "id": 1007,
+        "displayName": "User G",
+        "active": true,
+        "slug": "user-g",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-g"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636635862000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "75c7be15749e2a2d739e4d266631ccde51174eb3",
+          "displayId": "75c7be15749"
+        }
+      ]
+    },
+    {
+      "id": "75c7be15749e2a2d739e4d266631ccde51174eb3",
+      "displayId": "75c7be15749",
+      "author": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636629378000,
+      "committer": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636629378000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "55769264a50efeeb11ebc7a3538bc23871219b08",
+          "displayId": "55769264a50"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1287"
+        ]
+      }
+    },
+    {
+      "id": "55769264a50efeeb11ebc7a3538bc23871219b08",
+      "displayId": "55769264a50",
+      "author": {
+        "name": "user-d",
+        "emailAddress": "user-d@corp.org",
+        "id": 1004,
+        "displayName": "User D",
+        "active": true,
+        "slug": "user-d",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-d"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636618387000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636618387000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+          "displayId": "4c394c1bc3e"
+        }
+      ]
+    },
+    {
+      "id": "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+      "displayId": "4c394c1bc3e",
+      "author": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636548133000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636548133000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "4c3709c96c3958d0b942ec88b7a0a363d64c91bd",
+          "displayId": "4c3709c96c3"
+        }
+      ]
+    },
+    {
+      "id": "4c3709c96c3958d0b942ec88b7a0a363d64c91bd",
+      "displayId": "4c3709c96c3",
+      "author": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636547032000,
+      "committer": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636547032000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "d0fa7f636b3010210b18a8ea60109689d964ff28",
+          "displayId": "d0fa7f636b3"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1287"
+        ]
+      }
+    },
+    {
+      "id": "d0fa7f636b3010210b18a8ea60109689d964ff28",
+      "displayId": "d0fa7f636b3",
+      "author": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636546319000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636546319000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "0f2e83873798b05d8bf27342934852937aaed344",
+          "displayId": "0f2e8387379"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1205"
+        ]
+      }
+    },
+    {
+      "id": "0f2e83873798b05d8bf27342934852937aaed344",
+      "displayId": "0f2e8387379",
+      "author": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636543991000,
+      "committer": {
+        "name": "user-f",
+        "emailAddress": "user-f@corp.org",
+        "id": 1006,
+        "displayName": "User F",
+        "active": true,
+        "slug": "user-f",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-f"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636543991000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "865a9715765e16b3af309c89e07ebf5990a1065c",
+          "displayId": "865a9715765"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1287"
+        ]
+      }
+    },
+    {
+      "id": "865a9715765e16b3af309c89e07ebf5990a1065c",
+      "displayId": "865a9715765",
+      "author": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636541115000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636541115000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "51061413555e9801d7da8ef3ea975cac2a03c2ba",
+          "displayId": "51061413555"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1205"
+        ]
+      }
+    },
+    {
+      "id": "51061413555e9801d7da8ef3ea975cac2a03c2ba",
+      "displayId": "51061413555",
+      "author": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636538744000,
+      "committer": {
+        "name": "user-c",
+        "emailAddress": "user-c@corp.org",
+        "id": 1003,
+        "displayName": "User C",
+        "active": true,
+        "slug": "user-c",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-c"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636538744000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "cd7d875c644123e2bb362c218da587296f45f149",
+          "displayId": "cd7d875c644"
+        }
+      ],
+      "properties": {
+        "jira-key": [
+          "PROJ-1398"
+        ]
+      }
+    },
+    {
+      "id": "cd7d875c644123e2bb362c218da587296f45f149",
+      "displayId": "cd7d875c644",
+      "author": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636531956000,
+      "committer": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636531956000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "810027698cbfdc54ecc6fd7bf7b6c01cd068bc67",
+          "displayId": "810027698cb"
+        }
+      ]
+    },
+    {
+      "id": "810027698cbfdc54ecc6fd7bf7b6c01cd068bc67",
+      "displayId": "810027698cb",
+      "author": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636530790000,
+      "committer": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636530790000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "ecd34e4a691b7fb2a39b694aa483775ce441c5f5",
+          "displayId": "ecd34e4a691"
+        }
+      ]
+    },
+    {
+      "id": "ecd34e4a691b7fb2a39b694aa483775ce441c5f5",
+      "displayId": "ecd34e4a691",
+      "author": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1636529893000,
+      "committer": {
+        "name": "user-e",
+        "emailAddress": "user-e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "committerTimestamp": 1636529893000,
+      "message": "My awesome commit message",
+      "parents": [
+        {
+          "id": "6e217c76c123722da46e00c148d6c168d77895b6",
+          "displayId": "6e217c76c12"
+        }
+      ]
+    }
+  ],
+  "size": 25,
+  "isLastPage": false,
+  "start": 0,
+  "limit": 25,
+  "nextPageStart": 25
+}

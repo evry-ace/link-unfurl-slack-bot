@@ -1,0 +1,16 @@
+{
+  "size": 1,
+  "limit": 25,
+  "isLastPage": true,
+  "values": [
+    {
+      "state": "INPROGRESS",
+      "key": "ad887ae7b1528d2058db02a5162c1ece",
+      "name": "My Project » my-rep  » master #811",
+      "url": "https://bitbucket.corp.org/job/my-proj/job/my-repo/job/master/811/display/redirect",
+      "description": "The build is in progress...",
+      "dateAdded": 1638180213067
+    }
+  ],
+  "start": 0
+}

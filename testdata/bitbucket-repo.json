@@ -1,0 +1,44 @@
+{
+  "slug": "my-repo",
+  "id": 1244,
+  "name": "my-repo",
+  "description": "My repo description",
+  "hierarchyId": "9c534099aaa71941340c",
+  "scmId": "git",
+  "state": "AVAILABLE",
+  "statusMessage": "Available",
+  "forkable": true,
+  "project": {
+    "key": "MY-PROJ",
+    "id": 225,
+    "name": "My Project",
+    "description": "My Project description",
+    "public": true,
+    "type": "NORMAL",
+    "links": {
+      "self": [
+        {
+          "href": "https://bitbucket.corp.org/projects/MY-PROJ"
+        }
+      ]
+    }
+  },
+  "public": true,
+  "links": {
+    "clone": [
+      {
+        "href": "https://bitbucket.corp.org/scm/my-proj/my-repo.git",
+        "name": "http"
+      },
+      {
+        "href": "ssh://git@bitbucket.corp.org/my-proj/my-repo.git",
+        "name": "ssh"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://bitbucket.corp.org/projects/MY-PROJ/repos/my-repo/browse"
+      }
+    ]
+  }
+}
