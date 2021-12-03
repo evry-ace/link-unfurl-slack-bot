@@ -1,6 +1,6 @@
-# Link Unfurl Slack-bot
+# Link Unfurl Slack-bot ![Go Test](https://github.com/evry-ace/link-unfurl-slack-bot/actions/workflows/go.yml/badge.svg) ![CodeQL Analysis](https://github.com/evry-ace/link-unfurl-slack-bot/actions/workflows/codeql-analysis.yml/badge.svg) [![codecov](https://codecov.io/gh/evry-ace/link-unfurl-slack-bot/branch/main/graph/badge.svg?token=GK90PXI0A7)](https://codecov.io/gh/evry-ace/link-unfurl-slack-bot)
 
-Slack-bot to do link unfurl for private endpoints.
+Slack-bot to do link unfurl for private endpoints 🔐
 
 ## Features
 
