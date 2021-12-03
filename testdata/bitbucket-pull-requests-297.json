@@ -1,0 +1,222 @@
+{
+  "id": 297,
+  "version": 38,
+  "title": "My new feature",
+  "description": "My awesome description",
+  "state": "OPEN",
+  "open": true,
+  "closed": false,
+  "createdDate": 1623230904454,
+  "updatedDate": 1624264237507,
+  "fromRef": {
+    "id": "refs/heads/my-new-feature",
+    "displayId": "my-new-feature",
+    "latestCommit": "a68adcc6e8461db084acf7e76401d3c1542bb8ad",
+    "repository": {
+      "slug": "my-repo",
+      "id": 1244,
+      "name": "my-repo",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "MY-PROJ",
+        "id": 225,
+        "name": "Kubernetes",
+        "description": "My Project description",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/projects/MY-PROJ"
+            }
+          ]
+        }
+      },
+      "public": true,
+      "links": {
+        "clone": [
+          {
+            "href": "https://stash-admin@bitbucket.corp.org/scm/my-proj/my-repo.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@bitbucket.corp.org/my-proj/my-repo.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://bitbucket.corp.org/projects/MY-PROJ/repos/my-repo/browse"
+          }
+        ]
+      }
+    }
+  },
+  "toRef": {
+    "id": "refs/heads/master",
+    "displayId": "master",
+    "latestCommit": "cafcce4e7a1fef2b51004971283d77f5daca21f3",
+    "repository": {
+      "slug": "my-repo",
+      "id": 1244,
+      "name": "my-repo",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "MY-PROJ",
+        "id": 225,
+        "name": "Kubernetes",
+        "description": "My awesome Bitbucket project",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/projects/MY-PROJ"
+            }
+          ]
+        }
+      },
+      "public": true,
+      "links": {
+        "clone": [
+          {
+            "href": "https://stash-admin@bitbucket.corp.org/scm/my-proj/my-repo.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@bitbucket.corp.org/my-proj/my-repo.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://bitbucket.corp.org/projects/MY-PROJ/repos/my-repo/browse"
+          }
+        ]
+      }
+    }
+  },
+  "locked": false,
+  "author": {
+    "user": {
+      "name": "user-d",
+      "emailAddress": "user.d@corp.org",
+      "id": 1004,
+      "displayName": "User D",
+      "active": true,
+      "slug": "user-d",
+      "type": "NORMAL",
+      "links": {
+        "self": [
+          {
+            "href": "https://bitbucket.corp.org/users/user-d"
+          }
+        ]
+      }
+    },
+    "role": "AUTHOR",
+    "approved": false,
+    "status": "UNAPPROVED"
+  },
+  "reviewers": [
+    {
+      "user": {
+        "name": "user-e",
+        "emailAddress": "user.e@corp.org",
+        "id": 1005,
+        "displayName": "User E",
+        "active": true,
+        "slug": "user-e",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-e"
+            }
+          ]
+        }
+      },
+      "role": "REVIEWER",
+      "approved": false,
+      "status": "UNAPPROVED"
+    },
+    {
+      "user": {
+        "name": "user-b",
+        "emailAddress": "user.b@corp.org",
+        "id": 1002,
+        "displayName": "User B",
+        "active": true,
+        "slug": "user-b",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-b"
+            }
+          ]
+        }
+      },
+      "lastReviewedCommit": "81d0b478dd2ccb32da24f71b9d61d7bc7cc08899",
+      "role": "REVIEWER",
+      "approved": true,
+      "status": "APPROVED"
+    },
+    {
+      "user": {
+        "name": "user-a",
+        "emailAddress": "user.a@corp.org",
+        "id": 7252,
+        "displayName": "User A",
+        "active": true,
+        "slug": "user-a",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-a"
+            }
+          ]
+        }
+      },
+      "role": "REVIEWER",
+      "approved": false,
+      "status": "UNAPPROVED"
+    },
+    {
+      "user": {
+        "name": "user-g",
+        "emailAddress": "user.g@corp.org",
+        "id": 1007,
+        "displayName": "User G",
+        "active": true,
+        "slug": "user-g",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://bitbucket.corp.org/users/user-g"
+            }
+          ]
+        }
+      },
+      "role": "REVIEWER",
+      "approved": false,
+      "status": "UNAPPROVED"
+    }
+  ],
+  "participants": [],
+  "links": {
+    "self": [
+      {
+        "href": "https://bitbucket.corp.org/projects/MY-PROJ/repos/my-repo/pull-requests/297"
+      }
+    ]
+  }
+}
