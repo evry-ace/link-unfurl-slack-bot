@@ -3,6 +3,7 @@ package bitbucket
 import (
 	"fmt"
 	"regexp"
+	"strings"
 	"time"
 
 	"github.com/xeonx/timeago"
@@ -50,7 +51,7 @@ func (pr PullRequest) ReviewBy() string {
 		return "No reviews :sob:"
 	}
 
-	return fmt.Sprintf("%s", reviewers)
+	return strings.Join(reviewers, ", ")
 }
 
 // OpenSince returns how long the Pull Request has been open in human readable
