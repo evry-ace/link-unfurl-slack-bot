@@ -67,8 +67,8 @@ func (pr PullRequest) OpenSince() string {
 func (pr PullRequest) RepoSlug() string {
 	return fmt.Sprintf(
 		"%s/%s#%d",
-		pr.ToRef.Repository.Slug,
 		pr.ToRef.Repository.Project.Key,
+		pr.ToRef.Repository.Slug,
 		pr.ID,
 	)
 }

@@ -65,3 +65,20 @@ func TestPullRequestReviewBy(t *testing.T) {
 		assert.Equal(t, "Test User (APPROVED), Test User 2 (NEEDS_WORK)", pr.ReviewedBy())
 	})
 }
+
+func TestPullRequestRepoSlug(t *testing.T) {
+	t.Run("returns repo slug", func(t *testing.T) {
+		pr := PullRequest{
+			ID: 123,
+			ToRef: GitRef{
+				Repository: Repository{
+					Slug: "test-repo",
+					Project: Project{
+						Key: "test-project",
+					},
+				},
+			},
+		}
+		assert.Equal(t, "test-project/test-repo#123", pr.RepoSlug())
+	})
+}
