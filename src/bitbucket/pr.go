@@ -38,8 +38,8 @@ type PullRequest struct {
 	} `json:"links"`
 }
 
-// ReviewBy returns a list of reviewers as a string
-func (pr PullRequest) ReviewBy() string {
+// ReviewedBy returns a list of reviewers as a string
+func (pr PullRequest) ReviewedBy() string {
 	var reviewers []string
 	for _, reviewer := range pr.Reviewers {
 		if reviewer.Role == PullRequestUserRoleReviewer && reviewer.Status != PullRequestReviewStatusUnapproved {

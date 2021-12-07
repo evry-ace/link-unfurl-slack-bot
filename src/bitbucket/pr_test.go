@@ -9,7 +9,7 @@ import (
 func TestPullRequestReviewBy(t *testing.T) {
 	t.Run("no reviews when there are no reviewers", func(t *testing.T) {
 		pr := PullRequest{}
-		assert.Equal(t, "No reviews :sob:", pr.ReviewBy())
+		assert.Equal(t, "No reviews :sob:", pr.ReviewedBy())
 	})
 
 	t.Run("ignors reviewers without review", func(t *testing.T) {
@@ -21,7 +21,7 @@ func TestPullRequestReviewBy(t *testing.T) {
 				},
 			},
 		}
-		assert.Equal(t, "No reviews :sob:", pr.ReviewBy())
+		assert.Equal(t, "No reviews :sob:", pr.ReviewedBy())
 	})
 
 	t.Run("review by single reviewer", func(t *testing.T) {
@@ -36,7 +36,7 @@ func TestPullRequestReviewBy(t *testing.T) {
 				},
 			},
 		}
-		assert.Equal(t, "Test User (APPROVED)", pr.ReviewBy())
+		assert.Equal(t, "Test User (APPROVED)", pr.ReviewedBy())
 	})
 
 	t.Run("reviews by multiple reviewers", func(t *testing.T) {
@@ -62,6 +62,6 @@ func TestPullRequestReviewBy(t *testing.T) {
 				},
 			},
 		}
-		assert.Equal(t, "Test User (APPROVED), Test User 2 (NEEDS_WORK)", pr.ReviewBy())
+		assert.Equal(t, "Test User (APPROVED), Test User 2 (NEEDS_WORK)", pr.ReviewedBy())
 	})
 }
