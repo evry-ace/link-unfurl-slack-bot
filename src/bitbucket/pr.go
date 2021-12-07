@@ -73,8 +73,8 @@ func (pr PullRequest) RepoSlug() string {
 	)
 }
 
-// ToString returns the Pull Request as a string
-func (pr PullRequest) ToString() string {
+// String returns the Pull Request as a string
+func (pr PullRequest) String() string {
 	return fmt.Sprintf(
 		"_%s_ (%s) by %s opened %s",
 		pr.Title,

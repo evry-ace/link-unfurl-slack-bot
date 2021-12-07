@@ -2,6 +2,7 @@ package bitbucket
 
 import (
 	"testing"
+	"time"
 
 	"gotest.tools/assert"
 )
@@ -80,5 +81,104 @@ func TestPullRequestRepoSlug(t *testing.T) {
 			},
 		}
 		assert.Equal(t, "test-project/test-repo#123", pr.RepoSlug())
+	})
+}
+
+func TestPullRequestString(t *testing.T) {
+	t.Run("returns string representation", func(t *testing.T) {
+		pr := PullRequest{
+			ID:    123,
+			Title: "Test PR",
+			State: "OPEN",
+			Author: Author{
+				User: User{
+					DisplayName: "Test User",
+				},
+			},
+			Reviewers: []Author{
+				{
+					Role:   PullRequestUserRoleReviewer,
+					Status: PullRequestReviewStatusApproved,
+				},
+			},
+			ToRef: GitRef{
+				Repository: Repository{
+					Slug: "test-repo",
+					Project: Project{
+						Key: "test-project",
+					},
+				},
+			},
+			CreatedDate: time.Now().UnixMicro(),
+		}
+		assert.Equal(t, "_Test PR_ (:white_check_mark: Approved) by Test User opened in about a second", pr.String())
+	})
+}
+
+func TestPullRequestIsWorkInProgress(t *testing.T) {
+	t.Run("returns true when pull request is work in progress", func(t *testing.T) {
+		pr := PullRequest{
+			Title: "WIP: Test PR",
+		}
+		assert.Equal(t, true, pr.IsWorkInProgress())
+	})
+
+	t.Run("returns false when pull request is not work in progress", func(t *testing.T) {
+		pr := PullRequest{
+			Title: "Test PR",
+		}
+		assert.Equal(t, false, pr.IsWorkInProgress())
+	})
+}
+
+func TestPullRequestIsApproved(t *testing.T) {
+	t.Run("returns true when pull request is approved", func(t *testing.T) {
+		pr := PullRequest{
+			Reviewers: []Author{
+				{
+					Role:   PullRequestUserRoleReviewer,
+					Status: PullRequestReviewStatusApproved,
+				},
+			},
+		}
+		assert.Equal(t, true, pr.IsApproved())
+	})
+
+	t.Run("returns false when pull request is not approved", func(t *testing.T) {
+		pr := PullRequest{
+			Reviewers: []Author{
+				{
+					Role:   PullRequestUserRoleReviewer,
+					Status: PullRequestReviewStatusUnapproved,
+				},
+			},
+		}
+		assert.Equal(t, false, pr.IsApproved())
+	})
+}
+
+func TestPullRequestAppovalStatus(t *testing.T) {
+	t.Run("returns approved when pull request is approved", func(t *testing.T) {
+		pr := PullRequest{
+			Reviewers: []Author{
+				{
+					Role:   PullRequestUserRoleReviewer,
+					Status: PullRequestReviewStatusApproved,
+				},
+			},
+		}
+		assert.Equal(t, "Approved", pr.ApprovalStatus(false))
+	})
+
+	t.Run("returns unapproved when pull request is not approved", func(t *testing.T) {
+		pr := PullRequest{
+			Reviewers: []Author{
+				{
+					Role:   PullRequestUserRoleReviewer,
+					Status: PullRequestReviewStatusUnapproved,
+				},
+			},
+		}
+		assert.Equal(t, "Unapproved", pr.ApprovalStatus(false))
 	})
 }
