@@ -19,3 +19,7 @@ Slack-bot to do link unfurl for private endpoints 🔐
 | `SLACK_APP_TOKEN`    | Slack App Token | `true` | `""` |
 | `SLACK_BOT_TOKEN`    | Slack Bot Token | `true` | `""` |
 | `CHANNEL_REGEX`      | Enabled channels for link unfurling | `false` | `"^devops-([a-zA-Z0-9_]+)$"` |
+
+## Deployment
+
+[Go to Kubernetes deploymennt guide](./dist/kubernetes/).
