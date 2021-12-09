@@ -125,7 +125,7 @@ func bitbucketPRLink(proj string, repo string, prid int, c bitbucket.Client) (sl
 		},
 		{
 			Title: "Reviewers",
-			Value: pr.ReviewBy(),
+			Value: pr.ReviewedBy(),
 			Short: true,
 		},
 		{

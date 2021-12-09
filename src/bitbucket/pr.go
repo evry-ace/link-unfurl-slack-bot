@@ -3,6 +3,7 @@ package bitbucket
 import (
 	"fmt"
 	"regexp"
+	"strings"
 	"time"
 
 	"github.com/xeonx/timeago"
@@ -37,8 +38,8 @@ type PullRequest struct {
 	} `json:"links"`
 }
 
-// ReviewBy returns a list of reviewers as a string
-func (pr PullRequest) ReviewBy() string {
+// ReviewedBy returns a list of reviewers as a string
+func (pr PullRequest) ReviewedBy() string {
 	var reviewers []string
 	for _, reviewer := range pr.Reviewers {
 		if reviewer.Role == PullRequestUserRoleReviewer && reviewer.Status != PullRequestReviewStatusUnapproved {
@@ -50,7 +51,7 @@ func (pr PullRequest) ReviewBy() string {
 		return "No reviews :sob:"
 	}
 
-	return fmt.Sprintf("%s", reviewers)
+	return strings.Join(reviewers, ", ")
 }
 
 // OpenSince returns how long the Pull Request has been open in human readable
@@ -66,14 +67,14 @@ func (pr PullRequest) OpenSince() string {
 func (pr PullRequest) RepoSlug() string {
 	return fmt.Sprintf(
 		"%s/%s#%d",
-		pr.ToRef.Repository.Slug,
 		pr.ToRef.Repository.Project.Key,
+		pr.ToRef.Repository.Slug,
 		pr.ID,
 	)
 }
 
-// ToString returns the Pull Request as a string
-func (pr PullRequest) ToString() string {
+// String returns the Pull Request as a string
+func (pr PullRequest) String() string {
 	return fmt.Sprintf(
 		"_%s_ (%s) by %s opened %s",
 		pr.Title,

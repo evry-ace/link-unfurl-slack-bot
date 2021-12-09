@@ -15,9 +15,9 @@ var StatusPaths = map[string]string{
 }
 
 const (
-	// PullRequestRewiewStatusNeedWork is the status for a pull request review
+	// PullRequestReviewStatusNeedsWork is the status for a pull request review
 	// when the pull request needs more work before it can be merged.
-	PullRequestRewiewStatusNeedWork = "NEEDS_WORK"
+	PullRequestReviewStatusNeedsWork = "NEEDS_WORK"
 
 	// PullRequestReviewStatusApproved is the status for an approved pull request review
 	PullRequestReviewStatusApproved = "APPROVED"
