@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: link-unfurl-slack-bot
+  name: link-unfurl-slack-bot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: link-unfurl-slack-bot
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: link-unfurl-slack-bot
+    spec:
+      containers:
+      - image: ghcr.io/evry-ace/link-unfurl-slack-bot:main
+        name: link-unfurl-slack-bot
+        imagePullPolicy: Always
+        resources: {}
+        envFrom:
+        - secretRef:
+            name: link-unfurl-slack-bot
+        env:
+        - name: CHANNEL_REGEX
+          value: "^devops-squad$"
