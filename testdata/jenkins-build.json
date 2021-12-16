@@ -1,0 +1,619 @@
+{
+  "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowJob",
+  "actions" : [
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "jenkins.scm.api.metadata.ObjectMetadataAction"
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.displayurlapi.actions.JobDisplayAction"
+    },
+    {
+      "_class" : "com.cloudbees.plugins.credentials.ViewCredentialsAction"
+    },
+    {
+      "_class" : "hudson.plugins.claim.JobClaimsAction"
+    }
+  ],
+  "description" : null,
+  "displayName" : "master",
+  "displayNameOrNull" : null,
+  "fullDisplayName" : "My Proj » my-repo » master",
+  "fullName" : "my-proj/my-repo/master",
+  "name" : "master",
+  "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 834,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/834/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 833,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/833/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 832,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/832/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 831,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/831/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 830,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/830/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 829,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/829/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 828,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/828/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 827,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/827/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 826,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/826/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 825,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/825/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 824,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/824/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 823,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/823/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 822,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/822/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 821,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/821/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 820,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/820/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 819,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/819/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 818,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/818/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 817,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/817/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 816,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/816/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 815,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/815/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 814,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/814/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 813,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/813/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 812,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/812/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 811,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/811/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 810,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/810/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 809,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/809/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 808,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/808/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 807,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/807/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 806,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/806/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 805,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/805/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 804,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/804/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 803,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/803/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 802,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/802/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 801,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/801/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 800,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/800/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 799,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/799/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 798,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/798/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 797,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/797/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 796,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/796/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 795,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/795/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 794,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/794/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 793,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/793/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 792,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/792/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 791,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/791/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 790,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/790/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 789,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/789/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 788,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/788/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 787,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/787/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 786,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/786/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 785,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/785/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 784,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/784/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 783,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/783/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 782,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/782/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 781,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/781/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 780,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/780/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 779,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/779/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 778,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/778/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 777,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/777/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 776,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/776/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 775,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/775/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 774,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/774/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 773,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/773/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 772,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/772/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 771,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/771/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 770,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/770/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 769,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/769/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 768,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/768/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 767,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/767/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 766,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/766/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 765,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/765/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 764,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/764/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 763,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/763/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 762,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/762/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 761,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/761/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 760,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/760/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 759,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/759/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 758,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/758/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 757,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/757/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 756,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/756/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 755,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/755/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 754,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/754/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 753,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/753/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 752,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/752/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 751,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/751/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 750,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/750/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 749,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/749/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 748,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/748/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 747,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/747/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 746,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/746/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 745,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/745/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 744,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/744/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 743,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/743/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 742,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/742/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 741,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/741/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 740,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/740/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 739,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/739/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 738,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/738/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 737,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/737/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 736,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/736/"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+      "number" : 735,
+      "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/735/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number" : 1,
+    "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 1 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-60to79",
+      "iconUrl" : "health-60to79.png",
+      "score" : 80
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number" : 834,
+    "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/834/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number" : 834,
+    "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/834/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number" : 833,
+    "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/833/"
+  },
+  "lastStableBuild" : {
+    "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number" : 834,
+    "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/834/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number" : 834,
+    "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/834/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+    "number" : 833,
+    "url" : "https://jenkins.corp.org.no/job/my-proj/job/my-repo/job/master/833/"
+  },
+  "nextBuildNumber" : 835,
+  "property" : [
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty",
+      "branch" : {
+        
+      }
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : true,
+  "resumeBlocked" : false
+}

@@ -1,0 +1,309 @@
+{
+  "_class" : "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "jenkins.branch.BranchEventCause",
+          "shortDescription" : "Branch event"
+        }
+      ]
+    },
+    {
+      "_class" : "jenkins.metrics.impl.TimeInQueueAction",
+      "blockedDurationMillis" : 0,
+      "blockedTimeMillis" : 0,
+      "buildableDurationMillis" : 0,
+      "buildableTimeMillis" : 67740,
+      "buildingDurationMillis" : 591513,
+      "executingTimeMillis" : 430385,
+      "executorUtilization" : 0.73,
+      "subTaskCount" : 3,
+      "waitingDurationMillis" : 5169,
+      "waitingTimeMillis" : 5169
+    },
+    {
+      "_class" : "jenkins.scm.api.SCMRevisionAction"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.libs.LibrariesAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "my-branch-2" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 702,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "0ed13978f8ec75bd322ec12a7ea498d62c990053",
+            "branch" : [
+              {
+                "SHA1" : "0ed13978f8ec75bd322ec12a7ea498d62c990053",
+                "name" : "my-branch-2"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "0ed13978f8ec75bd322ec12a7ea498d62c990053",
+            "branch" : [
+              {
+                "SHA1" : "0ed13978f8ec75bd322ec12a7ea498d62c990053",
+                "name" : "my-branch-2"
+              }
+            ]
+          }
+        },
+        "my-branch-3" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 505,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "7fe8c63c748ae32fb1efdaae6abd625280a9f30b",
+            "branch" : [
+              {
+                "SHA1" : "7fe8c63c748ae32fb1efdaae6abd625280a9f30b",
+                "name" : "my-branch-3"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7fe8c63c748ae32fb1efdaae6abd625280a9f30b",
+            "branch" : [
+              {
+                "SHA1" : "7fe8c63c748ae32fb1efdaae6abd625280a9f30b",
+                "name" : "my-branch-3"
+              }
+            ]
+          }
+        },
+        "my-branch-4" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 218,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ad3ed39b9191331120d6cdb3bce2aef8925a40e2",
+            "branch" : [
+              {
+                "SHA1" : "ad3ed39b9191331120d6cdb3bce2aef8925a40e2",
+                "name" : "my-branch-4"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ad3ed39b9191331120d6cdb3bce2aef8925a40e2",
+            "branch" : [
+              {
+                "SHA1" : "ad3ed39b9191331120d6cdb3bce2aef8925a40e2",
+                "name" : "my-branch-4"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f925edd11e5501177aba28f172ad604094095e56",
+        "branch" : [
+          {
+            "SHA1" : "f925edd11e5501177aba28f172ad604094095e56",
+            "name" : "master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "ssh://git@bitbucket.corp.org/my-proj/jenkins-utils.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 789,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+            "branch" : [
+              {
+                "SHA1" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+                "name" : "master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+            "branch" : [
+              {
+                "SHA1" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+                "name" : "master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+        "branch" : [
+          {
+            "SHA1" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+            "name" : "master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "ssh://git@bitbucket.corp.org/my-proj/my-repo.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.support.steps.input.ApproverAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.support.steps.input.ApproverAction"
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.displayurlapi.actions.RunDisplayAction"
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#789",
+  "duration" : 591513,
+  "estimatedDuration" : 5005383,
+  "executor" : null,
+  "fullDisplayName" : "My Proj » my-repo » master #789",
+  "id" : "789",
+  "keepLog" : false,
+  "number" : 789,
+  "queueId" : 2865095,
+  "result" : "SUCCESS",
+  "timestamp" : 1636548138669,
+  "url" : "https://jenkins.corp.org/job/my-proj/job/my-repo/job/master/789/",
+  "changeSets" : [
+    {
+      "_class" : "hudson.plugins.git.GitChangeSetList",
+      "items" : [
+        {
+          "_class" : "hudson.plugins.git.GitChangeSet",
+          "affectedPaths" : [
+            "file5.foo",
+            "file4.foo",
+            "file1.foo",
+            "file3.foo",
+            "file2.foo"
+          ],
+          "commitId" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+          "timestamp" : 1636548133000,
+          "author" : {
+            "absoluteUrl" : "https://jenkins.corp.org/user/user-a",
+            "fullName" : "User A"
+          },
+          "authorEmail" : "user-a@corp.org",
+          "comment" : "Pull request #622: my commit message\u000a\u000aMerge in My-Proj/my-repo from my-branch-1 to master\u000a\u000aSquashed commit of the following:\u000a\u000acommit afef536590bb2e7e5741e7b96f0181e2701fe006\u000aMerge: 2538790 ed5b0b3\u000aAuthor: User A <user-a@corp.org>\u000aDate:   Wed Nov 10 13:35:06 2021 +0100\u000a\u000a    Merge branch 'my-branch-1' of ssh://bitbucket.corp.org:7999/my-proj/my-repo into my-branch-1\u000a\u000acommit 253879081e9158f287ac6ca77486084d4a2a81d3\u000aAuthor: User B <user-b@corp.org>\u000aDate:   Tue Nov 9 22:07:40 2021 +0100\u000a\u000a    my commit message\u000a\u000acommit ed5b0b3c2c7363de3c4303a5db04d28e90a29da2\u000aAuthor: User B <user-b@corp.org>\u000aDate:   Tue Nov 9 22:07:40 2021 +0100\u000a\u000a    my commit message\u000a",
+          "date" : "2021-11-10 13:42:13 +0100",
+          "id" : "4c394c1bc3e96bf2f31e45a628646bacc1115e0e",
+          "msg" : "Pull request #622: my commit message",
+          "paths" : [
+            {
+              "editType" : "edit",
+              "file" : "file1.foo"
+            },
+            {
+              "editType" : "edit",
+              "file" : "file2.foo"
+            },
+            {
+              "editType" : "edit",
+              "file" : "file3.foo"
+            },
+            {
+              "editType" : "edit",
+              "file" : "file4.foo"
+            },
+            {
+              "editType" : "edit",
+              "file" : "file5.foo"
+            }
+          ]
+        }
+      ],
+      "kind" : "git"
+    }
+  ],
+  "culprits" : [
+    {
+      "absoluteUrl" : "https://jenkins.corp.org/user/user-a",
+      "fullName" : "User A"
+    }
+  ],
+  "nextBuild" : {
+    "number" : 790,
+    "url" : "https://jenkins.corp.org/job/my-proj/job/my-repo/job/master/790/"
+  },
+  "previousBuild" : {
+    "number" : 788,
+    "url" : "https://jenkins.corp.org/job/my-proj/job/my-repo/job/master/788/"
+  }
+}

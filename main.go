@@ -1,12 +1,14 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"log"
 	"os"
 	"regexp"
 	"strings"
 
+	"github.com/bndr/gojenkins"
 	"github.com/evry-ace/link-unfurl-slack-bot/src/bitbucket"
 	"github.com/evry-ace/link-unfurl-slack-bot/src/unfurl"
 	"github.com/evry-ace/link-unfurl-slack-bot/src/utils"
@@ -29,6 +31,12 @@ func main() {
 
 	b := bitbucket.Client{Server: c.BitbucketServer, PAT: c.BitbucketPAT}
 
+	ctx := context.Background()
+	j, err := gojenkins.CreateJenkins(nil, fmt.Sprintf("https://%s/", c.JenkinsServer)).Init(ctx)
+	if err != nil {
+		logrus.Fatal(err.Error(), "jenkins client init failed")
+	}
+
 	if !strings.HasPrefix(c.SlackAppToken, "xapp-") {
 		logrus.Fatal("SLACK_APP_TOKEN must have the prefix \"xapp-\".")
 	}
@@ -44,6 +52,13 @@ func main() {
 		slack.OptionLog(log.New(os.Stdout, "api: ", log.Lshortfile|log.LstdFlags)),
 		slack.OptionAppLevelToken(c.SlackAppToken),
 	)
+
+	unfurl := unfurl.Unfurl{
+		Logger:    logrus.StandardLogger(),
+		Bitbucket: &b,
+		Jenkins:   j,
+		Config:    &c,
+	}
 
 	// Slack Events API
 	client := socketmode.New(
@@ -81,9 +96,6 @@ func main() {
 					case *slackevents.LinkSharedEvent:
 						logrus.WithField("event", ev).Debug("LinkSharedEvent received")
 
-						// Create a new map to store link unfurled data as Slack attachments
-						unfurls := make(map[string]slack.Attachment, len(ev.Links))
-
 						// Get slack channel name
 						channel, err := api.GetConversationInfo(ev.Channel, false)
 						if err != nil {
@@ -91,7 +103,7 @@ func main() {
 							continue
 						}
 
-						// Only unfurl links from the channel matching regex
+						// Check if channel is configured
 						re := regexp.MustCompile(c.ChannelRegex)
 						if !re.MatchString(channel.Name) {
 							logrus.WithFields(logrus.Fields{
@@ -102,21 +114,11 @@ func main() {
 							continue
 						}
 
-						// Unfurl all the shared links
-						for _, link := range ev.Links {
-							// Check the link domain, discard if not supported
-							// Currently only Bitbucket links are supported
-							if link.Domain != c.BitbucketServer {
-								continue
-							}
-
-							// Create the unfurl attachement
-							attachement, linkErr := unfurl.BitbucketLink(link.URL, b)
-							if linkErr != nil {
-								logrus.WithError(linkErr).WithField("link", link).Error("Failed to unfurl Bitbucket link")
-							} else {
-								unfurls[link.URL] = attachement
-							}
+						// Unfurl all the links
+						unfurls, err := unfurl.Links(ev)
+						if err != nil {
+							logrus.WithError(err).WithField("event", ev).Error("Failed to unfurl links")
+							continue
 						}
 
 						logrus.WithField("unfurls", unfurls).Debug("Unfurls")
@@ -141,6 +143,9 @@ func main() {
 			case socketmode.EventTypeHello:
 				//numConnections := evt.Request.NumConnections
 				logrus.WithField("evt", fmt.Sprintf("%v", evt)).Info("Hello event received")
+
+			case socketmode.EventTypeInteractive:
+				logrus.WithField("evt", fmt.Sprintf("%v", evt)).Info("Interactive event received")
 
 			default:
 				logrus.WithFields(logrus.Fields{

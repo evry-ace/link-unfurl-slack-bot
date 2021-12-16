@@ -11,6 +11,7 @@ type Config struct {
 	LogFormat       string `envconfig:"LOGFORMAT" default:"text"`
 	BitbucketPAT    string `envconfig:"BITBUCKET_PAT" required:"true"`
 	BitbucketServer string `envconfig:"BITBUCKET_SERVER" required:"true"`
+	JenkinsServer   string `envconfig:"JENKINS_SERVER" required:"true"`
 	SlackAppToken   string `envconfig:"SLACK_APP_TOKEN" required:"true"`
 	SLackBotToken   string `envconfig:"SLACK_BOT_TOKEN" required:"true"`
 	ChannelRegex    string `envconfig:"CHANNEL_REGEX" default:"^devops-([a-zA-Z0-9_]+)$"`

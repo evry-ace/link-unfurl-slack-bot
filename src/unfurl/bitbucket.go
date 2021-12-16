@@ -21,7 +21,7 @@ const (
 )
 
 // bitbucketLinkType returns the type of Bitbucket link and the matches
-func bitbucketLinkType(u *url.URL) (string, []string) {
+func (u *Unfurl) bitbucketLinkType(url *url.URL) (string, []string) {
 	var isPullRequest = regexp.MustCompile(
 		"^/" + fmt.Sprintf(bitbucket.APIPaths["pullRequest"],
 			"([^/]+)", "([^/]+)", "([^/]+)",
@@ -38,28 +38,23 @@ func bitbucketLinkType(u *url.URL) (string, []string) {
 		"^/" + fmt.Sprintf(bitbucket.APIPaths["repo"], "([^/]+)", "([^/]+)"),
 	)
 
-	if isPullRequest.MatchString(u.Path) {
-		return BitbucketURLPullRequestType, isPullRequest.FindStringSubmatch(u.Path)
-	} else if isSourceCode.MatchString(u.Path) {
-		return BitbucketURLSourceCodeType, isSourceCode.FindStringSubmatch(u.Path)
-	} else if isRepo.MatchString(u.Path) {
-		return BitbucketURLRepoType, isRepo.FindStringSubmatch(u.Path)
+	if isPullRequest.MatchString(url.Path) {
+		return BitbucketURLPullRequestType, isPullRequest.FindStringSubmatch(url.Path)
+	} else if isSourceCode.MatchString(url.Path) {
+		return BitbucketURLSourceCodeType, isSourceCode.FindStringSubmatch(url.Path)
+	} else if isRepo.MatchString(url.Path) {
+		return BitbucketURLRepoType, isRepo.FindStringSubmatch(url.Path)
 	}
 
 	return BitbucketURLUnknownType, []string{}
 }
 
-// BitbucketLink returns a Slack Attachment for Bitbucket links
-func BitbucketLink(URL string, c bitbucket.Client) (slack.Attachment, error) {
+// bitbucketLink returns a Slack Attachment for Bitbucket links
+func (u *Unfurl) bitbucketLink(URL *url.URL) (slack.Attachment, error) {
 	attachement := slack.Attachment{}
 
-	u, err := url.Parse(URL)
-	if err != nil {
-		return slack.Attachment{}, err
-	}
-
 	// Parse what type of link this is
-	linkType, matches := bitbucketLinkType(u)
+	linkType, matches := u.bitbucketLinkType(URL)
 	fmt.Printf("linkType=%s matches=%s", linkType, matches)
 	switch linkType {
 	case BitbucketURLPullRequestType:
@@ -71,15 +66,19 @@ func BitbucketLink(URL string, c bitbucket.Client) (slack.Attachment, error) {
 		}
 
 		fmt.Printf("project=%s, repo=%s, prid=%d", proj, repo, prid)
-
-		return bitbucketPRLink(proj, repo, prid, c)
+		return u.bitbucketPRLink(proj, repo, prid)
 
 	case BitbucketURLSourceCodeType:
 		// @TODO
 		fmt.Println("BitbucketURLSourceCodeType is not implemented for BitbucketLink()")
+
 	case BitbucketURLRepoType:
-		// @TODO
-		fmt.Println("BitbucketURLRepoType is not implemented for BitbucketLink()")
+		proj := matches[1]
+		repo := matches[2]
+
+		fmt.Printf("project=%s, repo=%s", proj, repo)
+		return u.bitbucketRepoLink(proj, repo)
+
 	default:
 		return slack.Attachment{}, errors.New("bitbucket link not supported")
 	}
@@ -88,19 +87,19 @@ func BitbucketLink(URL string, c bitbucket.Client) (slack.Attachment, error) {
 }
 
 // bitbucketPRLink returns a Slack Attachment for Bitbucket Pull Request links
-func bitbucketPRLink(proj string, repo string, prid int, c bitbucket.Client) (slack.Attachment, error) {
+func (u *Unfurl) bitbucketPRLink(proj string, repo string, prid int) (slack.Attachment, error) {
 	attachement := slack.Attachment{}
 
 	// Get the Pull Request
-	pr, err := c.PullRequest(proj, repo, prid)
+	pr, err := u.Bitbucket.PullRequest(proj, repo, prid)
 	if err != nil {
-		return slack.Attachment{}, err
+		return attachement, err
 	}
 
 	// Get the Pull Request Status
-	st, err := c.Status(pr.FromRef.LatestCommit)
+	st, err := u.Bitbucket.Status(pr.FromRef.LatestCommit)
 	if err != nil {
-		return slack.Attachment{}, err
+		return attachement, err
 	}
 
 	attachement.Ts = json.Number(fmt.Sprint(pr.CreatedDate))
@@ -138,24 +137,24 @@ func bitbucketPRLink(proj string, repo string, prid int, c bitbucket.Client) (sl
 	return attachement, nil
 }
 
-// BitbucketRepoLink returns a Slack Attachment for a Bitbucket Repo links
-func BitbucketRepoLink(project string, repo string, c bitbucket.Client) (slack.Attachment, error) {
+// bitbucketRepoLink returns a Slack Attachment for a Bitbucket Repo links
+func (u *Unfurl) bitbucketRepoLink(project string, repo string) (slack.Attachment, error) {
 	var attachement slack.Attachment
 
 	// Get repo info
-	r, err := c.Repository(project, repo)
+	r, err := u.Bitbucket.Repository(project, repo)
 	if err != nil {
 		return attachement, err
 	}
 
 	// Get repo commits
-	co, err := c.Commits(project, repo, bitbucket.CommitOptions{})
+	co, err := u.Bitbucket.Commits(project, repo, bitbucket.CommitOptions{})
 	if err != nil {
 		return attachement, err
 	}
 
 	// Get build status for latest commit
-	st, err := c.Status(co.Values[0].ID)
+	st, err := u.Bitbucket.Status(co.Values[0].ID)
 	if err != nil {
 		return attachement, err
 	}

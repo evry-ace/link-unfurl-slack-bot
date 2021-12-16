@@ -20,9 +20,11 @@ const (
 )
 
 var (
-	client = bitbucket.Client{
-		Server: server,
-		PAT:    "my-token",
+	u = Unfurl{
+		Bitbucket: &bitbucket.Client{
+			Server: server,
+			PAT:    "my-token",
+		},
 	}
 )
 
@@ -55,8 +57,9 @@ func TestBitbucketLinkType(t *testing.T) {
 
 	for shouldBeType, paths := range typeLinks {
 		for _, path := range paths {
-			u := url.URL{Path: path}
-			isType, _ := bitbucketLinkType(&u)
+			u := Unfurl{}
+			URL := url.URL{Path: path}
+			isType, _ := u.bitbucketLinkType(&URL)
 			if isType != shouldBeType {
 				t.Errorf("URL type should be %s but was %s for url %+v", shouldBeType, isType, u)
 			}
@@ -70,7 +73,7 @@ func TestBitbucketLink(t *testing.T) {
 		defer httpmock.DeactivateAndReset()
 
 		linkPath := fmt.Sprintf(bitbucket.APIPaths["pullRequest"], project, repo, pr)
-		linkUrl := fmt.Sprintf("https://%s/%s", server, linkPath)
+		linkUrl := url.URL{Path: "/" + linkPath, Scheme: "https", Host: server}
 
 		prJSON := fmt.Sprintf("%s/%s", testdataDir, "bitbucket-pull-requests-297.json")
 		prAPI := fmt.Sprintf(bitbucket.APIPaths["base"], server, linkPath)
@@ -85,7 +88,7 @@ func TestBitbucketLink(t *testing.T) {
 		httpmock.RegisterResponder("GET", statusAPI,
 			httpmock.NewStringResponder(200, httpmock.File(statusJSON).String()))
 
-		attachment, err := BitbucketLink(linkUrl, client)
+		attachment, err := u.bitbucketLink(&linkUrl)
 
 		if err != nil {
 			t.Errorf("Error should be nil but was %s", err)
