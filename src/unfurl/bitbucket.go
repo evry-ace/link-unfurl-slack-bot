@@ -102,16 +102,7 @@ func (u *Unfurl) bitbucketPRLink(proj string, repo string, prid int) (slack.Atta
 		return attachement, err
 	}
 
-	attachement.Ts = json.Number(fmt.Sprint(pr.CreatedDate))
-	attachement.FooterIcon = BitbucketIcon
-	attachement.Footer = "Bitbucket"
-	attachement.AuthorID = fmt.Sprintf("%d", pr.Author.User.ID)
-	attachement.AuthorName = pr.Author.User.DisplayName
-	attachement.AuthorLink = pr.Author.User.Links.Self[0].Href
-	attachement.Title = fmt.Sprintf("#%d %s", pr.ID, pr.Title)
-	attachement.TitleLink = pr.Links.Self[0].Href
-	attachement.Text = pr.Description
-	attachement.Fields = []slack.AttachmentField{
+	fields := []slack.AttachmentField{
 		{
 			Title: "PR State",
 			Value: pr.State,
@@ -122,17 +113,32 @@ func (u *Unfurl) bitbucketPRLink(proj string, repo string, prid int) (slack.Atta
 			Value: st.State(),
 			Short: true,
 		},
-		{
-			Title: "Reviewers",
-			Value: pr.ReviewedBy(),
-			Short: true,
-		},
-		{
-			Title: "Review Status",
-			Value: pr.ApprovalStatus(true),
-			Short: true,
-		},
 	}
+	if pr.ApprovalStatus(false) != "" {
+		fields = append(
+			fields,
+			slack.AttachmentField{
+				Title: "Reviewers",
+				Value: pr.ReviewedBy(),
+				Short: true,
+			}, slack.AttachmentField{
+				Title: "Review Status",
+				Value: pr.ApprovalStatus(true),
+				Short: true,
+			},
+		)
+	}
+
+	attachement.Ts = json.Number(fmt.Sprint(pr.CreatedDate))
+	attachement.FooterIcon = BitbucketIcon
+	attachement.Footer = "Bitbucket"
+	attachement.AuthorID = fmt.Sprintf("%d", pr.Author.User.ID)
+	attachement.AuthorName = pr.Author.User.DisplayName
+	attachement.AuthorLink = pr.Author.User.Links.Self[0].Href
+	attachement.Title = fmt.Sprintf("#%d %s", pr.ID, pr.Title)
+	attachement.TitleLink = pr.Links.Self[0].Href
+	attachement.Text = pr.Description
+	attachement.Fields = fields
 
 	return attachement, nil
 }
